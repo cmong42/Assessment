@@ -2,7 +2,8 @@ package Example1;
 
 public class StringBuilder_Demo1 {
 	public void LastLetterCap() {
-	String s = "hello hi how are you doing today ?";
+	String s = "hello hi how are you doing today?";
+	s = s.replaceAll("[^A_Za-z0-9]", " ");
 	StringBuilder sb = new StringBuilder();
 	String stringList[] = s.split(" ");
 	//To convert last character in string to uppercase:
